@@ -1,0 +1,77 @@
+body {
+	background-color: #FFF;
+}
+#genius_title {
+	font-size: 3rem;
+	margin: 20px 0 10px 0;
+	text-align: center;
+	color: hsla(210, 100%, 75%, 1.0);
+}
+.panel {
+	background-color: white;
+	padding: 0 30px 30px 30px;
+	width: 42%;
+	border-radius: 15px;
+	margin-top: 10px;
+	height: 450px;
+	overflow: scroll;
+}
+.panel * {
+	margin: 10px 0 0 0;
+}
+#intro {
+	float: left;
+	margin-left: 20px;
+}
+#posts {
+	float: right;
+	margin-right: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat';
+}
+p {
+	font-family: 'Open Sans';
+}
+#container {
+	display: none;
+}
+#loader {
+	display: inline;
+	position: absolute;
+	background-color: #fff;
+	padding: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	font-size: 2rem;
+	opacity: 0;
+	-webkit-transition: opacity 2s;
+}
+#loader img {
+	display: block;
+	margin: auto;
+	margin-top: 8%;
+}
+#button {
+	height: 6%;
+	width: 9%;
+	font-size: 1rem;
+	font-style: normal;
+	font-family: 'Open Sans';
+	margin: auto;
+	background-color: black;
+	color: white;
+	opacity: 0.7;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	-webkit-transition: opacity 4s;
+}
