@@ -25,8 +25,8 @@ function loader() {
 
     $("#button").click(function(){
       $('#loader').css("opacity","0");
-      $('body').css("background-color","#001F3F");
       $('#container').css("display","inline");
+      $('body').css("background-color","#01FF70");
       setTimeout(function () {
         $('#loader').css("display", "none");
       }, 1500);
