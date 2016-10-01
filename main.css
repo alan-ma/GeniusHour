@@ -20,9 +20,10 @@ body {
 	background-color: #FFF;
 	padding: 0 30px 30px 30px;
 	margin-top: 10px;
-	height: 475px;
+	height: 600px;
 	overflow: scroll;
 	box-shadow: 5px 5px 10px #888;
+	background: linear-gradient(to top, #888 0, #FFF 30px, #FFF 100%);
 }
 .panel * {
 	margin: 10px 0 0 0;
