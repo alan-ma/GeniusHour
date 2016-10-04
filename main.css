@@ -146,7 +146,7 @@ a:active {
 	display: flex;
 	align-items: center;
 	border-top: 5px solid transparent;
-	animation: 2s spin infinite linear;
+	animation: 4s spin infinite linear;
 }
 #fancy2 {
 	height: 50%;
@@ -155,7 +155,7 @@ a:active {
 	margin: auto;
 	border-radius: 50%;
 	border-bottom: 5px solid transparent;
-	animation: 3s spin infinite;
+	animation: 5s spin infinite;
 }
 @keyframes spin {
 	from {transform: rotate(0deg);}
@@ -170,7 +170,7 @@ a:active {
 	margin-bottom: -135px;
 	border-top: 8px solid transparent;
 	border-bottom: 8px solid transparent;
-	animation: 4s spin linear infinite;
+	animation: 6s spin linear infinite;
 }
 .stretch {
 	height: 0;

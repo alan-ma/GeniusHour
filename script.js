@@ -1,6 +1,6 @@
 posts = [
 	['General Goals', 'Sept. 30, 2016', "First things first: The blog has been created! This will be where I'll write updates on the project as the semester progresses. <br> As the first day of the project, I'm beginning with a general direction I see the project going in. The goal of the game is having the player use a physical device to input the acceleration of an object inside the game, and model its realistic movement. <br> The two main aspects of the project are the physical input system and the game. Currently, I am thinking of building the game in a website through Hyper Text Markup Language (HTML), Cascading Style Sheets (CSS), as well as JavaScript. The reason is because the game will then be accessible everywhere with internet, and there are many articles that deal with developing physics engines on websites. I've found a great <a href=\"http://brm.io/game-physics-for-beginners/\" target=\"_blank\">resource</a> for beginning with game physics, so the plan is to begin learning how to develop a physics engine. <br> As for the physical input system, I envision a peripheral device that can be spun to simulate acceleration. If I am able to repurpose a mouse's scroll wheel and turn it into a large wheel that can be spun; it will be a single-function peripheral that, when spun, will input acceleration into the game. In order to find the incremental input of a scroll wheel, something like <a href=\"https://css-tricks.com/mousewheel-inputs/\" target=\"_blank\">this</a> can be used. <br> So that's it for the first day; next week, I'll be doing more research into creating physics engines."],
-  ['Title', 'Date', 'Post Content'],
+  ['Title', 'Date', 'Post Content']
 ];
 
 function load_posts(post_array) {
@@ -39,8 +39,6 @@ function loader() {
 function main() {
 	load_posts();
 	loader();
-  $('#loader').css("display", "none");
-  $('#container').css("display","inline");
 }
 
 $(document).ready(function() {
