@@ -5,6 +5,9 @@ html, body {
 body {
 	background-color: #FFF;
 }
+#loader p {
+	font-size: 1.8rem;
+}
 #container {
 	display: none;
 	height: 100%;
