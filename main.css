@@ -1,6 +1,7 @@
 html, body {
 	margin: 0;
 	height: 100%;
+	cursor: url('cursors/aero_arrow.cur'), auto;
 }
 body {
 	background-color: #FFF;
@@ -121,9 +122,13 @@ p {
 	justify-content: center;
 	opacity: 0;
 	-webkit-transition: opacity 4s;
+	cursor: url('cursors/aero_move.cur'), pointer;
 }
 #button:hover {
 	-webkit-transform: scale(1.1);
+}
+a {
+	cursor: url('cursors/aero_move.cur'), auto;
 }
 /* unvisited link */
 a:link {
