@@ -42,7 +42,6 @@ body {
       		rgba(0, 0, 0, 0.8)
     	),
 		url("img/intro.jpg");
-	background-repeat: no-repeat;
 	background-size: auto 100%;
 }
 #posts {
@@ -55,7 +54,6 @@ body {
     	),
 		url("img/posts.png");
 	background-size: auto 100%;
-	background-repeat: no-repeat;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat';
