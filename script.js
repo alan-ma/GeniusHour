@@ -40,10 +40,10 @@ function loader() {
 function click_detector() {
   $("body")
     .mouseup(function() {
-      $(this).css('cursor', "url('cursors/aero_arrow.cur'), auto");
+      $(this).css('cursor', "url('cursors/alt.cur'), auto");
     })
     .mousedown(function() {
-      $(this).css('cursor', "url('cursors/aero_move.cur'), auto");
+      $(this).css('cursor', "url('cursors/move.cur'), auto");
     });
 }
 
