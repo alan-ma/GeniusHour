@@ -127,6 +127,9 @@ p {
 #button:hover {
 	-webkit-transform: scale(1.1);
 }
+#button:active {
+	cursor: url('cursors/move.cur'), auto;
+}
 a {
 	cursor: url('cursors/link.cur'), auto;
 }
@@ -145,6 +148,7 @@ a:hover {
 /* selected link */
 a:active {
     color: #39CCCC;
+    cursor: url('cursors/move.cur'), auto;
 }
 #fancy1 {
 	height: 50px;
