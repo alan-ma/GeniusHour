@@ -5,6 +5,7 @@ html, body {
 }
 body {
 	background-color: #FFF;
+	font-family: "Open Sans";
 }
 #loader p {
 	font-size: 1.8rem;

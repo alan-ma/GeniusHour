@@ -7,10 +7,16 @@ function addimg(link) {
 }
 var posts = [
 	{
-		id: 5,
+		id: 6,
 		title: "The Second Law",
-		date: "Oct. 28, 2016",
-		content: "Based on the code from the guide, I've created a simple vector class that allows for vector manipulation. I had a bit of knowledge on matrices and vectors from the Machine Learning " + addlink('https://www.coursera.org/learn/machine-learning', 'course') + " that I did last year (although I have yet to finish the last few weeks that talk about unsupervised learning). Anyways, the lienar algebra review in that course didn't go over vector cross product and rotation, so I watched " + addlink('https://www.youtube.com/watch?v=pJzmiywagfY', 'these') + " " + addlink('https://www.youtube.com/watch?v=lPWfIq5DzqI', 'videos') + " to understand Kanber's code (thanks Khan Academy). <br> The code: </p>	" + '<iframe width="100%" height="300" src="//jsfiddle.net/alan_ma/k6nkfdzc/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>' + "<p>"
+		date: "Oct. 28, 2015",
+		content: "Newton's Second Law of motion will be the core of this physics engine, since it describes the relationship between forces and their effects. With the Second Law, the engine will be able to simulate nearly any scenario accurately. The great Burak Kanber has outlined six simple steps to modelling any situation:</p>" + "<ol><li>Figure out what the forces are on an object</li><li>Add those forces up to get a single \“resultant\” or \“net\” force</li><li>Use F = ma to calculate the object’s acceleration due to those forces</li>Use the object’s acceleration to calculate the object’s velocity</li><li>Use the object’s velocity to calculate the object’s position</li><li>Since the forces on the object may change from moment to moment, repeat this process from #1, forever.</li></ol>" + "<p>And that's all there is to simulating the motion of an object!"
+	},
+	{
+		id: 5,
+		title: "Vector Class",
+		date: "Oct. 25, 2016",
+		content: "Based on the code from the guide, I've created a simple vector class that allows for vector manipulation. I had a bit of knowledge on matrices and vectors from the Machine Learning " + addlink('https://www.coursera.org/learn/machine-learning', 'course') + " that I did last year (although I have yet to finish the last few weeks that talk about unsupervised learning). Anyways, the lienar algebra review in that course didn't go over vector cross product and rotation, so I watched " + addlink('https://www.youtube.com/watch?v=pJzmiywagfY', 'these') + " " + addlink('https://www.youtube.com/watch?v=lPWfIq5DzqI', 'videos') + " to understand Kanber's code (thanks Khan Academy). <br> The code: </p>	" + '<iframe width="100%" height="300" src="//jsfiddle.net/alan_ma/k6nkfdzc/embedded/js/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>' + "<p>So after a good amount of contemplation, I now finally understand Kanber's rotation function and it's SO AMAZING. It allows you to rotate one point around another, so yay! Vectors are great :D"
 	},
 	{
 		id: 4,

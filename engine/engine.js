@@ -38,5 +38,63 @@ V.prototype.rotate = function(angle, vector) {
     return new V(x_prime, y_prime);
 };
 
+var nul = new V(0,100);
+var a = new V(0,200);
+var b = a.rotate(-45,nul);
+var r = 5;
+var dt = 0.02;
+var height = 400;
+var width = 400;
+
+function init() {
+	canvas = document.getElementById('canvas');
+    ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'blue';
+}
+
+function draw() {
+    ctx.clearRect(0, 0, width, height);
+
+    ctx.beginPath();
+    ctx.moveTo(0,0);
+	ctx.lineTo(a.x,a.y);
+	ctx.strokeStyle='blue';
+	ctx.stroke();
+
+	ctx.beginPath();
+	ctx.moveTo(0,0);
+	ctx.lineTo(b.x,b.y);
+	ctx.strokeStyle='red';
+	ctx.stroke();
+
+	ctx.beginPath();
+	ctx.moveTo(nul.x,nul.y);
+	ctx.lineTo(b.x,b.y);
+	ctx.strokeStyle='green';
+	ctx.stroke();
+}
+
+window.onload = function() {
+  init();
+  setInterval(draw, dt * 1000);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
