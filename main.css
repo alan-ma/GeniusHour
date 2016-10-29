@@ -11,7 +11,7 @@ body {
 	font-size: 1.8rem;
 }
 #container {
-	//display: none;
+	display: none;
 	height: 100%;
 }
 #content {

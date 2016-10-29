@@ -41,7 +41,7 @@ function click_detector() {
 function main() {
 	load_posts();
 	loader();
-  click_detector();
+    click_detector();
 }
 
 $(document).ready(function() {
