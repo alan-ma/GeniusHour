@@ -3,17 +3,17 @@ function addlink(link, word) {
 	return("<a href=\""+link+"\" target=\"_blank\">"+word+"</a>");
 }
 function addimg(link) {
-	return("</p><img src=" + link + "><p>");
+	return("<img src=" + link + ">");
 }
 function addcode(code) {
-	return("</p><iframe src=\"code/" + code + "\" width='auto' height='auto' frameborder=0</iframe><p>");
+	return("<iframe src=\"" + code + "\" width='200' height='400' frameborder=0</iframe>");
 }
 var posts = [
 	{
 		id: 7,
 		title: "Integration",
 		date: "Nov. 11, 2016",
-		content: "There is a close relationship between acceleration, velocity, and position; with one value, it is possible to calculate the rest. In game physics, this is especially useful - by knowing the acceleration, the change in velocity can be calculated, which can be used to find the object's position. This is a technique called <em>numerical integration</em>. All methods of numerical integration are based around calculating variables after each 'snapshot' of time.<br>A basic method of performing numerical integration is " + addlink("https://en.wikipedia.org/wiki/Euler_method", "called ") + addlink("https://www.youtube.com/watch?v=q87L9R9v274", "Euler's ") + addlink("https://www.youtube.com/watch?v=ypb8cKbS7hk", "Method. ") + " The following is pseudocode that would occur on every time step of the program: " + addcode("euler.html") + "However, Euler's Method isn't very accurate, so this is when Velocity Verlet Integration comes in."
+		content: "There is a close relationship between acceleration, velocity, and position; with one value, it is possible to calculate the rest. In game physics, this is especially useful - by knowing the acceleration, the change in velocity can be calculated, which can be used to find the object's position. This is a technique called <em>numerical integration</em>. "
 	},
 	{
 		id: 6,
@@ -25,7 +25,7 @@ var posts = [
 		id: 5,
 		title: "Vector Class",
 		date: "Oct. 25, 2016",
-		content: "Based on the code from the guide, I've created a simple vector class that allows for vector manipulation. I had a bit of knowledge on matrices and vectors from the Machine Learning " + addlink('https://www.coursera.org/learn/machine-learning', 'course') + " that I did last year (although I have yet to finish the last few weeks that talk about unsupervised learning). Anyways, the linear algebra review in that course didn't go over vector cross product and rotation, so I watched " + addlink('https://www.youtube.com/watch?v=pJzmiywagfY', 'these') + " " + addlink('https://www.youtube.com/watch?v=lPWfIq5DzqI', 'videos') + " to understand Kanber's example code (thanks Khan Academy). <br> The code: " + addcode("engine1.html") + "So after a good amount of contemplation, I now finally understand the vector rotation and it's really cool. Rotation matrices are great!!! Here's a " + addlink('https://gyazo.com/6215a31f4a77c4da949f8ca3311fa869','picture') + " of one vector (blue) being rotate around a certain point (not shown) to become another vector (red). The rotation about the point is shown in green. Vectors are great :D",
+		content: "Based on the code from the guide, I've created a simple vector class that allows for vector manipulation. I had a bit of knowledge on matrices and vectors from the Machine Learning " + addlink('https://www.coursera.org/learn/machine-learning', 'course') + " that I did last year (although I have yet to finish the last few weeks that talk about unsupervised learning). Anyways, the lienar algebra review in that course didn't go over vector cross product and rotation, so I watched " + addlink('https://www.youtube.com/watch?v=pJzmiywagfY', 'these') + " " + addlink('https://www.youtube.com/watch?v=lPWfIq5DzqI', 'videos') + " to understand Kanber's example code (thanks Khan Academy). <br> The code: </p>	" + addcode("index.html") + "<p>So after a good amount of contemplation, I now finally understand the vector rotation and it's really cool. Rotation matrices are great!!! Here's a " + addlink('https://gyazo.com/6215a31f4a77c4da949f8ca3311fa869','picture') + " of one vector (blue) being rotate around a certain point (not shown) to become another vector (red). The rotation about the point is shown in green. Vectors are great :D",
 		date: "Oct. 28, 2016",
 	},
 	{
@@ -53,3 +53,26 @@ var posts = [
 		content: "First things first: The blog has been created! This will be where I'll write updates on the project as the semester progresses. <br>	As the first day of the project, I'm beginning with a general direction I see the project going in. The goal of the game is having the player use a physical device to input the acceleration of an object inside the game, and model its realistic movement. <br> The two main aspects of the project are the physical input system and the game. Currently, I am thinking of building the game in a website through Hyper Text Markup Language (HTML), Cascading Style Sheets (CSS), as well as JavaScript. The reason is because the game will then be accessible everywhere with internet, and there are many articles that deal with developing physics engines on websites. I've found a great " + addlink("http://brm.io/game-physics-for-beginners/", "resource") + " for beginning with game physics, so the plan is to begin learning how to develop a physics engine. <br> As for the physical input system, I envision a peripheral device that can be spun to simulate acceleration. If I am able to repurpose a mouse's scroll wheel and turn it into a large wheel that can be spun; it will be a single-function peripheral that, when spun, will input acceleration into the game. In order to find the incremental input of a scroll wheel, something like " + addlink("https://css-tricks.com/mousewheel-inputs/", "this") + " can be used. <br>	So that's it for the first day; next week, I'll be doing more research into creating physics engines."
 	}
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

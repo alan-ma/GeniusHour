@@ -1,6 +1,9 @@
+<link rel="stylesheet" href="code.css">
+<pre>
+<code>
 //Creating a physics engine for Alan Ma's Genius Hour project
 //Based on the guide by Burak Kanber (link: http://buildnewgames.com/gamephysics/)
-
+//Build 1
 //Starting off with defining a generic vector class (for 2D vectors only, but they could be expanded for more dimensions)
 var V = function(x, y) {
     this.x = x;
@@ -22,86 +25,17 @@ V.prototype.scale = function(s) {
 V.prototype.dot = function(v) {
     return (this.x * v.x + this.y * v.y);
 };
-
 //defining the 'cross' product function. Usually, the cross product returns a vector, but since all our vectors will are 2D (x and y only), any cross product will only have a z-component; we will return this z-component as a scalar.
 V.prototype.cross = function(v) {
     return (this.x * v.y - this.y * v.x);
 };
-//defining the 'rotate' function that rotates a vector by a certain angle.
+//defining the 'rotate' function that rotates a vector by a certain angle around a specific point.
 V.prototype.rotate = function(angle, vector) {
     var x = this.x - vector.x;
     var y = this.y - vector.y;
-
     var x_prime = vector.x + ((x * Math.cos(angle)) - (y * Math.sin(angle)));
     var y_prime = vector.y + ((x * Math.sin(angle)) + (y * Math.cos(angle)));
-
     return new V(x_prime, y_prime);
 };
-
-var nul = new V(0,100);
-var a = new V(0,200);
-var b = a.rotate(-45,nul);
-var c = a.rotate(-45,new V(0,0));
-var r = 5;
-var dt = 0.02;
-var height = 400;
-var width = 400;
-
-function init() {
-	canvas = document.getElementById('canvas');
-    ctx = canvas.getContext('2d');
-    ctx.fillStyle = 'blue';
-}
-
-function draw() {
-    ctx.clearRect(0, 0, width, height);
-
-    ctx.beginPath();
-    ctx.moveTo(0,0);
-	ctx.lineTo(a.x,a.y);
-	ctx.strokeStyle='blue';
-	ctx.stroke();
-
-	ctx.beginPath();
-	ctx.moveTo(0,0);
-	ctx.lineTo(c.x,c.y);
-	ctx.strokeStyle='orange';
-	ctx.stroke();
-
-	ctx.beginPath();
-	ctx.moveTo(0,0);
-	ctx.lineTo(b.x,b.y);
-	ctx.strokeStyle='red';
-	ctx.stroke();
-
-	ctx.beginPath();
-	ctx.moveTo(nul.x,nul.y);
-	ctx.lineTo(b.x,b.y);
-	ctx.strokeStyle='green';
-	ctx.stroke();
-}
-
-window.onload = function() {
-  init();
-  setInterval(draw, dt * 1000);
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</code>
+</pre>

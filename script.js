@@ -56,7 +56,10 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $("#posts h1").on('click', function () {
+    $("#show").on('click', function () {
+        $(".content").slideDown(); //close all
+    });
+    $("#collapse").on('click', function () {
         $(".content").slideUp(); //close all
     });
 });

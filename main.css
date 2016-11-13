@@ -63,8 +63,12 @@ body {
 	margin: 10px auto;
 	width: 40%;
 }
-#posts h1:hover,h2:hover {
+#posts h2:hover, #show:hover, #collapse:hover {
 	color: #AAA;
+	cursor: url('cursors/link.cur'), pointer;
+}
+#posts h2:active, #show:active, #collapse:active {
+	cursor: url('cursors/move.cur'), auto;
 }
 .content {
 	display: none;
@@ -205,4 +209,7 @@ a:active {
 	margin: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+iframe {
+	width: 100%;
 }
