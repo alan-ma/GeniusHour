@@ -6,7 +6,7 @@ function addimg(link) {
 	return("</p><img src=" + link + "><p>");
 }
 function addcode(code) {
-	return("</p><iframe src=\"code/" + code + "\" width='auto' height='auto' frameborder=0</iframe><p>");
+	return("</p><iframe src=\"code/" + code + "\" width='auto' height='auto' frameborder=0></iframe><p>");
 }
 var posts = [
 	{
