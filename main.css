@@ -220,4 +220,7 @@ iframe {
     	box-sizing: border-box;
     	height: auto;
     }
+    #button {
+    	width: 20%;
+    }
 }
