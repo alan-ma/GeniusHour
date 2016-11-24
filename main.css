@@ -1,7 +1,6 @@
 html, body {
 	margin: 0;
 	height: 100%;
-	cursor: url('cursors/alt.cur'), auto;
 }
 body {
 	background-color: #FFF;
@@ -14,9 +13,13 @@ body {
 	display: none;
 	height: 100%;
 }
+@media screen and (min-width: 720px) {
+    #content {
+		display: flex;
+		align-items: stretch;
+	}
+}
 #content {
-	display: flex;
-	align-items: stretch;
 	margin: 0;
 	height: 100%;
 }
@@ -65,10 +68,7 @@ body {
 }
 #posts h2:hover, #show:hover, #collapse:hover {
 	color: #AAA;
-	cursor: url('cursors/link.cur'), pointer;
-}
-#posts h2:active, #show:active, #collapse:active {
-	cursor: url('cursors/move.cur'), auto;
+	cursor: pointer;
 }
 .content {
 	display: none;
@@ -139,16 +139,10 @@ p {
 	justify-content: center;
 	opacity: 0;
 	-webkit-transition: opacity 4s;
-	cursor: url('cursors/link.cur'), pointer;
+	cursor: pointer;
 }
 #button:hover {
 	-webkit-transform: scale(1.1);
-}
-#button:active {
-	cursor: url('cursors/move.cur'), auto;
-}
-a {
-	cursor: url('cursors/link.cur'), auto;
 }
 /* unvisited link */
 a:link {
@@ -165,7 +159,6 @@ a:hover {
 /* selected link */
 a:active {
     color: #39CCCC;
-    cursor: url('cursors/move.cur'), auto;
 }
 #fancy1 {
 	height: 50px;
@@ -212,4 +205,19 @@ a:active {
 }
 iframe {
 	width: 100%;
+}
+@media screen and (max-width: 720px) {
+    #intro {
+        width: 100%;
+        float: center;
+    }
+    #posts {
+    	width: 100%;
+    	float: center;
+    }
+    .panel {
+    	padding: 50px;
+    	box-sizing: border-box;
+    	height: auto;
+    }
 }
